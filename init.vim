@@ -153,7 +153,9 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
+let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#formatter='default'
 
 autocmd VimEnter * ++nested colorscheme gruvbox
 autocmd StdinReadPre * let s:std_in=1
