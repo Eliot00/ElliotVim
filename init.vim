@@ -18,6 +18,8 @@ set textwidth=120
 set ruler
 set showmatch
 set incsearch
+set ignorecase
+set smartcase
 set autochdir
 set hlsearch
 set history=800
