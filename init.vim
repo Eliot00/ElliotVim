@@ -8,11 +8,10 @@ set mouse=a
 set encoding=utf-8
 set t_Co=256
 filetype plugin indent on
-set autoindent
-set tabstop=4
-set shiftwidth=4
+set smartindent
 set expandtab
-set softtabstop=4
+set smarttab
+set backspace=indent,eol,start
 set relativenumber
 set cursorline
 set textwidth=120
