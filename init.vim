@@ -1,3 +1,4 @@
+" common config {{{
 set nocompatible
 set number
 syntax on
@@ -21,12 +22,21 @@ set incsearch
 set autochdir
 set hlsearch
 set history=800
-set background=light
 set hidden
 set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vimswap//
 set re=0
+" }}}
+
+" theme {{{
+set background=light
+autocmd VimEnter * ++nested colorscheme gruvbox
+" }}}
+
+" git gutter {{{
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -36,7 +46,9 @@ if has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
+" }}}
 
+" coc {{{
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -139,8 +151,9 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+" }}}
 
-let g:rustfmt_autosave=1
+" NERDTree {{{
 let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -153,17 +166,23 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#formatter='default'
+let NERDTreeMinimalUI = 1
+let NERDTreeAutoDeleteBuffer = 1
 
-autocmd VimEnter * ++nested colorscheme gruvbox
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') |  NERDTree | endif
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
-autocmd BufWinEnter * silent NERDTreeMirror
+"autocmd BufWinEnter * silent NERDTreeMirror
+" }}}
 
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
+" rust {{{
+let g:rustfmt_autosave=1
+" }}}
+
+" airline {{{
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#formatter='default'
+" }}}
 
