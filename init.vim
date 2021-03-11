@@ -186,3 +186,9 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='default'
 " }}}
 
+" fugitive {{{
+
+" git grep and open quickfix window
+command! -nargs=+ Gre execute 'silent Ggrep!' <q-args> | cw | redraw!
+" }}}
+
