@@ -214,6 +214,3 @@ let g:airline#extensions#tabline#formatter='default'
 command! -nargs=+ Gre execute 'silent Ggrep!' <q-args> | cw | redraw!
 " }}}
 
-" add drop command for inner terminal {{{
-autocmd VimEnter * call drop#OnTerminalOpen()
-" }}}
