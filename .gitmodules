@@ -31,3 +31,9 @@
 [submodule "pack/plugins/start/vim-fugitive"]
 	path = pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/plugins/opt/asyncrun"]
+	path = pack/plugins/opt/asyncrun
+	url = git@github.com:skywind3000/asyncrun.vim.git
+[submodule "pack/plugins/opt/asynctasks"]
+	path = pack/plugins/opt/asynctasks
+	url = git@github.com:skywind3000/asynctasks.vim.git
