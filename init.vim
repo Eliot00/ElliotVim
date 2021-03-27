@@ -218,3 +218,9 @@ command! -nargs=+ Gre execute 'silent Ggrep!' <q-args> <bar> cw <bar> redraw!
 let g:asyncrun_open = 6
 command! Async packadd asyncrun <bar> packadd asynctasks<CR>
 " }}}
+
+" visual search {{{
+xnoremap * :<C-u>call vsearch#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
+" }}}
+
