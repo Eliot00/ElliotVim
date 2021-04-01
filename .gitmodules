@@ -25,6 +25,7 @@
 [submodule "pack/syntax/start/coc.nvim"]
 	path = pack/syntax/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+	branch = release
 [submodule "pack/syntax/start/yats.vim"]
 	path = pack/syntax/start/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim
@@ -40,3 +41,4 @@
 [submodule "pack/colors/start/spaceduck"]
 	path = pack/colors/start/spaceduck
 	url = git@github.com:pineapplegiant/spaceduck.git
+	branch = main
