@@ -37,3 +37,6 @@
 [submodule "pack/plugins/opt/asynctasks"]
 	path = pack/plugins/opt/asynctasks
 	url = git@github.com:skywind3000/asynctasks.vim.git
+[submodule "pack/colors/start/spaceduck"]
+	path = pack/colors/start/spaceduck
+	url = git@github.com:pineapplegiant/spaceduck.git
