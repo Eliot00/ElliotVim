@@ -42,3 +42,6 @@
 	path = pack/colors/start/spaceduck
 	url = git@github.com:pineapplegiant/spaceduck.git
 	branch = main
+[submodule "pack/plugins/start/vim-devicons"]
+	path = pack/plugins/start/vim-devicons
+	url = git@github.com:ryanoasis/vim-devicons.git
