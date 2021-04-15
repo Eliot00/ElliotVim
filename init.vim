@@ -1,6 +1,9 @@
 " common config {{{
 set nocompatible
+
 set number
+set relativenumber
+
 syntax on
 set showmode
 set showcmd
@@ -8,21 +11,25 @@ set mouse=a
 set encoding=utf-8
 set t_Co=256
 filetype plugin indent on
+
+set autoindent
 set smartindent
 set expandtab
 set smarttab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
 set backspace=indent,eol,start
-set relativenumber
 set cursorline
 set textwidth=120
 set ruler
 set showmatch
+
 set incsearch
 set ignorecase
 set smartcase
+
 set autochdir
 set hlsearch
 set history=800
