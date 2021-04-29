@@ -236,3 +236,6 @@ xnoremap * :<C-u>call vsearch#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 " }}}
 
+" python highlight {{{
+let g:python_highlight_all = 1
+" }}}

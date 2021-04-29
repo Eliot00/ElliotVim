@@ -45,3 +45,6 @@
 [submodule "pack/plugins/start/vim-devicons"]
 	path = pack/plugins/start/vim-devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule "pack/syntax/start/python-syntax"]
+	path = pack/syntax/start/python-syntax
+	url = git@github.com:vim-python/python-syntax.git
