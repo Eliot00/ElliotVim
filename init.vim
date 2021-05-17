@@ -239,3 +239,15 @@ xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 " python highlight {{{
 let g:python_highlight_all = 1
 " }}}
+
+" sync coc extensions {{{
+let g:coc_global_extensions = [
+            \'coc-tsserver',
+            \'coc-tabnine',
+            \'coc-rust-analyzer',
+            \'coc-pyright',
+            \'coc-json',
+            \'coc-html',
+            \'coc-css'
+            \]
+" }}}
