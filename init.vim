@@ -55,7 +55,6 @@ let g:rustfmt_autosave=1
 
 " async task {{{
 let g:asyncrun_open = 6
-command! Async packadd asyncrun <bar> packadd asynctasks<CR>
 " }}}
 
 " visual search {{{
@@ -71,4 +70,11 @@ source plugins/coc.vim
 source plugins/git.vim
 source plugins/file_tree.vim
 source plugins/status.vim
+
+function! LoadOptionalPlugins()
+    packadd asyncrun
+    packadd asynctasks
+endfunction
+
+command! Extra call LoadOptionalPlugins()
 
