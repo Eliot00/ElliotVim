@@ -66,10 +66,10 @@ xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 let g:python_highlight_all = 1
 " }}}
 
-source plugins/coc.vim
-source plugins/git.vim
-source plugins/file_tree.vim
-source plugins/status.vim
+runtime plugins/coc.vim
+runtime plugins/git.vim
+runtime plugins/file_tree.vim
+runtime plugins/status.vim
 
 function! LoadOptionalPlugins()
     packadd asyncrun
