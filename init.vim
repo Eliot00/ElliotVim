@@ -62,10 +62,6 @@ xnoremap * :<C-u>call vsearch#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 " }}}
 
-" python highlight {{{
-let g:python_highlight_all = 1
-" }}}
-
 runtime plugins/coc.vim
 runtime plugins/git.vim
 runtime plugins/file_tree.vim
