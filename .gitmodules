@@ -45,3 +45,6 @@
 [submodule "pack/plugins/opt/vista"]
 	path = pack/plugins/opt/vista
 	url = git@github.com:liuchengxu/vista.vim.git
+[submodule "pack/plugins/opt/vim-clap"]
+	path = pack/plugins/opt/vim-clap
+	url = git@github.com:liuchengxu/vim-clap.git
