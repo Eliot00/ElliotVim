@@ -3,6 +3,7 @@ set nocompatible
 
 set number
 set relativenumber
+set signcolumn=yes
 
 syntax on
 set showmode
