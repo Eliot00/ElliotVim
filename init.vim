@@ -30,9 +30,10 @@ set showmatch
 set incsearch
 set ignorecase
 set smartcase
+set hlsearch
+set magic
 
 set autochdir
-set hlsearch
 set history=800
 set hidden
 set updatetime=300
