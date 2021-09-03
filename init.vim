@@ -76,6 +76,8 @@ runtime plugins/status.vim
 function! LoadOptionalPlugins()
     packadd asyncrun
     packadd asynctasks
+    packadd vim-clap
+    packadd vista
 endfunction
 
 command! Extra call LoadOptionalPlugins()
