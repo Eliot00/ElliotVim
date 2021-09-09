@@ -48,3 +48,6 @@
 [submodule "pack/plugins/opt/vim-clap"]
 	path = pack/plugins/opt/vim-clap
 	url = git@github.com:liuchengxu/vim-clap.git
+[submodule "pack/syntax/start/vim-polyglot"]
+	path = pack/syntax/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
