@@ -33,7 +33,6 @@ set smartcase
 set hlsearch
 set magic
 
-set autochdir
 set history=800
 set hidden
 set updatetime=300
