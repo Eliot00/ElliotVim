@@ -1,0 +1,6 @@
+{
+    "typescript.autoClosingTags": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.autoClosingTags": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
+}
