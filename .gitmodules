@@ -1,12 +1,6 @@
 [submodule "pack/plugins/start/rust.vim"]
 	path = pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
-[submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = https://github.com/preservim/nerdtree
-[submodule "pack/plugins/start/nerdtree-git-plugin"]
-	path = pack/plugins/start/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin
 [submodule "pack/plugins/start/vim-airline"]
 	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -51,3 +45,18 @@
 [submodule "pack/syntax/start/vim-polyglot"]
 	path = pack/syntax/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "pack/plugins/opt/fern"]
+	path = pack/plugins/opt/fern
+	url = git@github.com:lambdalisue/fern.vim.git
+[submodule "pack/plugins/opt/fern-renderer-nerdfont"]
+	path = pack/plugins/opt/fern-renderer-nerdfont
+	url = git@github.com:lambdalisue/fern-renderer-nerdfont.vim.git
+[submodule "pack/plugins/opt/nerdfont"]
+	path = pack/plugins/opt/nerdfont
+	url = git@github.com:lambdalisue/nerdfont.vim.git
+[submodule "pack/plugins/opt/fern-hijack"]
+	path = pack/plugins/opt/fern-hijack
+	url = git@github.com:lambdalisue/fern-hijack.vim.git
+[submodule "pack/plugins/opt/fern-git-status"]
+	path = pack/plugins/opt/fern-git-status
+	url = git@github.com:lambdalisue/fern-git-status.vim.git

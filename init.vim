@@ -72,6 +72,12 @@ runtime plugins/git.vim
 runtime plugins/file_tree.vim
 runtime plugins/status.vim
 
+packadd fern-hijack
+packadd fern
+packadd nerdfont
+packadd fern-renderer-nerdfont
+packadd fern-git-status
+
 function! LoadOptionalPlugins()
     packadd asyncrun
     packadd asynctasks
