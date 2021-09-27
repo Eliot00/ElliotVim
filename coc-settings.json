@@ -1,6 +1,4 @@
 {
-    "typescript.autoClosingTags": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-    "javascript.autoClosingTags": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
