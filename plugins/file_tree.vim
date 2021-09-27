@@ -6,6 +6,7 @@ function! s:init_fern() abort
   nmap <buffer> <2-LeftMouse> <Plug>(fern-action-open-or-expand)
   nmap <buffer> s <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
+  nmap <buffer> o <Plug>(fern-action-open:select)
 endfunction
 
 augroup fern-custom
