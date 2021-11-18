@@ -50,10 +50,6 @@ endif
 colorscheme spaceduck
 " }}}
 
-" rust {{{
-let g:rustfmt_autosave=1
-" }}}
-
 " async task {{{
 let g:asyncrun_open = 6
 " }}}
@@ -67,23 +63,12 @@ xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 let g:vista_default_executive = 'coc'
 " }}}
 
-runtime plugins/coc.vim
-runtime plugins/git.vim
-runtime plugins/file_tree.vim
-runtime plugins/status.vim
-
 packadd fern-hijack
 packadd fern
 packadd nerdfont
 packadd fern-renderer-nerdfont
 packadd fern-git-status
-
-function! LoadOptionalPlugins()
-    packadd asyncrun
-    packadd asynctasks
-    packadd vim-clap
-    packadd vista
-endfunction
-
-command! Extra call LoadOptionalPlugins()
-
+packadd asyncrun
+packadd asynctasks
+packadd vim-clap
+packadd vista
