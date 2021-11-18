@@ -52,6 +52,8 @@ colorscheme spaceduck
 
 " async task {{{
 let g:asyncrun_open = 6
+let g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
+noremap <silent><f5> :AsyncTask run<cr>
 " }}}
 
 " visual search {{{
