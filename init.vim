@@ -73,4 +73,3 @@ packadd fern-git-status
 packadd asyncrun
 packadd asynctasks
 packadd vim-clap
-packadd vista
