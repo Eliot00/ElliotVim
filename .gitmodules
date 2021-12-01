@@ -57,3 +57,6 @@
 [submodule "pack/plugins/opt/fern-git-status"]
 	path = pack/plugins/opt/fern-git-status
 	url = git@github.com:lambdalisue/fern-git-status.vim.git
+[submodule "pack/syntax/opt/vim-prisma"]
+	path = pack/syntax/opt/vim-prisma
+	url = git@github.com:pantharshit00/vim-prisma.git
