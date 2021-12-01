@@ -8,6 +8,7 @@ set signcolumn=yes
 syntax on
 set showmode
 set showcmd
+set ttymouse=sgr
 set mouse=a
 set encoding=utf-8
 set t_Co=256
@@ -32,13 +33,13 @@ set ignorecase
 set smartcase
 set hlsearch
 set magic
+set re=0
 
 set history=800
 set hidden
 set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vimswap//
-set re=0
 " }}}
 
 " theme {{{
