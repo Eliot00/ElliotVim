@@ -60,3 +60,6 @@
 [submodule "pack/syntax/opt/vim-prisma"]
 	path = pack/syntax/opt/vim-prisma
 	url = git@github.com:pantharshit00/vim-prisma.git
+[submodule "pack/colors/opt/everforest"]
+	path = pack/colors/opt/everforest
+	url = git@github.com:sainnhe/everforest.git
