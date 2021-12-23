@@ -23,10 +23,6 @@
 [submodule "pack/plugins/opt/asynctasks"]
 	path = pack/plugins/opt/asynctasks
 	url = git@github.com:skywind3000/asynctasks.vim.git
-[submodule "pack/colors/start/spaceduck"]
-	path = pack/colors/start/spaceduck
-	url = git@github.com:pineapplegiant/spaceduck.git
-	branch = main
 [submodule "pack/plugins/start/vim-devicons"]
 	path = pack/plugins/start/vim-devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
@@ -63,3 +59,6 @@
 [submodule "pack/colors/opt/everforest"]
 	path = pack/colors/opt/everforest
 	url = git@github.com:sainnhe/everforest.git
+[submodule "pack/colors/opt/spaceduck"]
+	path = pack/colors/opt/spaceduck
+	url = git@github.com:pineapplegiant/spaceduck.git
