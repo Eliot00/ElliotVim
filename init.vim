@@ -48,10 +48,19 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-set background=light
-packadd everforest
-colorscheme everforest
-"colorscheme spaceduck
+
+function! s:set_colorscheme(scheme, back)
+  if a:back == 'dark'
+    set background=dark
+  else
+    set background=light
+  endif
+  execute 'packadd!' a:scheme
+  execute 'colorscheme' a:scheme
+  let g:airline_theme = a:scheme
+endfunction
+
+call s:set_colorscheme('spaceduck', 'dark')
 " }}}
 
 " async task {{{
