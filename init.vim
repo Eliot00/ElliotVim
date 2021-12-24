@@ -42,27 +42,6 @@ set shortmess+=c
 set directory=$HOME/.vimswap//
 " }}}
 
-" theme {{{
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-
-function! s:set_colorscheme(scheme, back)
-  if a:back == 'dark'
-    set background=dark
-  else
-    set background=light
-  endif
-  execute 'packadd!' a:scheme
-  execute 'colorscheme' a:scheme
-  let g:airline_theme = a:scheme
-endfunction
-
-call s:set_colorscheme('spaceduck', 'dark')
-" }}}
-
 " async task {{{
 let g:asyncrun_open = 6
 let g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
