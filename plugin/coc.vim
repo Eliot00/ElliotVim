@@ -95,14 +95,3 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-
-let g:coc_global_extensions = [
-            \'coc-tsserver',
-            \'coc-tabnine',
-            \'coc-rust-analyzer',
-            \'coc-pyright',
-            \'coc-json',
-            \'coc-html',
-            \'coc-css'
-            \]
-
