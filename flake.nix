@@ -103,6 +103,11 @@
             };
           };
         };
+        nixosModule = { config }: {
+          environment.systemPackages = [
+            vim = defaultPackage
+          ];
+        };
       }
     );
 }
