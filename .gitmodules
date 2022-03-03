@@ -62,3 +62,6 @@
 [submodule "pack/colors/opt/spaceduck"]
 	path = pack/colors/opt/spaceduck
 	url = git@github.com:pineapplegiant/spaceduck.git
+[submodule "pack/colors/opt/sonokai"]
+	path = pack/colors/opt/sonokai
+	url = git@github.com:sainnhe/sonokai.git
