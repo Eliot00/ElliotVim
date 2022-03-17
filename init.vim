@@ -24,7 +24,6 @@ set softtabstop=4
 
 set backspace=indent,eol,start
 set cursorline
-set textwidth=120
 set ruler
 set showmatch
 
