@@ -4,7 +4,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-let s:themes = [['spaceduck', 'dark'], ['everforest', 'dark'], ['everforest', 'light'], ['sonokai', 'dark']]
+let s:themes = [['everforest', 'dark'], ['everforest', 'light'], ['sonokai', 'dark']]
 
 function! s:setTheme(scheme, back)
   if a:back == 'dark'
