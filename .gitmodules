@@ -62,3 +62,6 @@
 [submodule "pack/colors/opt/sonokai"]
 	path = pack/colors/opt/sonokai
 	url = git@github.com:sainnhe/sonokai.git
+[submodule "pack/plugins/opt/LeaderF"]
+	path = pack/plugins/opt/LeaderF
+	url = git@github.com:Yggdroot/LeaderF.git
