@@ -63,4 +63,3 @@ packadd fern-renderer-nerdfont
 packadd fern-git-status
 packadd asyncrun
 packadd asynctasks
-packadd vim-clap
