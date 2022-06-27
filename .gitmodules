@@ -1,9 +1,3 @@
-[submodule "pack/plugins/start/vim-airline"]
-	path = pack/plugins/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "pack/plugins/start/vim-airline-themes"]
-	path = pack/plugins/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "pack/plugins/start/vim-gitgutter"]
 	path = pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
@@ -62,3 +56,9 @@
 [submodule "pack/plugins/opt/LeaderF"]
 	path = pack/plugins/opt/LeaderF
 	url = git@github.com:Yggdroot/LeaderF.git
+[submodule "pack/colors/opt/nightfox"]
+	path = pack/colors/opt/nightfox
+	url = git@github.com:EdenEast/nightfox.nvim.git
+[submodule "pack/plugins/start/lightline"]
+	path = pack/plugins/start/lightline
+	url = git@github.com:itchyny/lightline.vim.git

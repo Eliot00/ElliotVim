@@ -4,22 +4,9 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-let s:themes = [['everforest', 'dark'], ['everforest', 'light'], ['sonokai', 'dark']]
+colorscheme dawnfox
 
-function! s:setTheme(scheme, back)
-  if a:back == 'dark'
-    set background=dark
-  else
-    set background=light
-  endif
-  execute 'packadd!' a:scheme
-  execute 'colorscheme' a:scheme
-  let g:airline_theme = a:scheme
-endfunction
-
-function! RollTheme()
-  let l:picked = s:themes[rand() % len(s:themes)]
-  call s:setTheme(l:picked[0], l:picked[1])
-endfunction
-
-call RollTheme()
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'selenized_light',
+      \}
