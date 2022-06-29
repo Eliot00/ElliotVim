@@ -4,9 +4,12 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme dawnfox
+set background=light
+packadd everforest
+colorscheme everforest
 
 set laststatus=2
+set showtabline=2
 let g:lightline = {
-      \ 'colorscheme': 'selenized_light',
-      \}
+      \ 'colorscheme': 'everforest',
+      \ }
