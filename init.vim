@@ -1,4 +1,8 @@
-" common config {{{
+vim9script
+
+import autoload 'vsearch.vim' as vsearch
+
+# common config {{{
 set nocompatible
 
 set number
@@ -39,22 +43,22 @@ set hidden
 set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vimswap//
-" }}}
+# }}}
 
-" async task {{{
-let g:asyncrun_open = 6
-let g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
+# async task {{{
+const g:asyncrun_open = 6
+const g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
 noremap <silent><f5> :AsyncTask run<cr>
-" }}}
+# }}}
 
-" visual search {{{
+# visual search {{{
 xnoremap * :<C-u>call vsearch#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
-" }}}
+# }}}
 
-" vista {{{
-let g:vista_default_executive = 'coc'
-" }}}
+# vista {{{
+const g:vista_default_executive = 'coc'
+# }}}
 
 packadd fern-hijack
 packadd fern

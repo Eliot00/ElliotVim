@@ -1,6 +1,8 @@
-function! vsearch#VSetSearch(cmdtype)
-    let temp = @s
+vim9script
+
+export def VSetSearch(cmdtype: string)
+    var temp = @s
     norm! gv"sy
-    let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
-    let @s = temp
-endfunction
+    setreg('/', '\V' .. substitute(escape(@s, cmdtype .. '\'), '\n', '\\n', 'g'))
+    setreg('s', temp)
+enddef 
