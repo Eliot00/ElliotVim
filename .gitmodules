@@ -59,6 +59,3 @@
 [submodule "pack/colors/opt/nightfox"]
 	path = pack/colors/opt/nightfox
 	url = git@github.com:EdenEast/nightfox.nvim.git
-[submodule "pack/plugins/start/lightline"]
-	path = pack/plugins/start/lightline
-	url = git@github.com:itchyny/lightline.vim.git
