@@ -7,9 +7,3 @@ endif
 set background=light
 packadd everforest
 colorscheme everforest
-
-set laststatus=2
-set showtabline=2
-let g:lightline = {
-      \ 'colorscheme': 'everforest',
-      \ }
