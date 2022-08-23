@@ -1,5 +1,6 @@
 {
     "coc.preferences.formatOnSaveFiletypes": ["rust"],
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+    "rust-analyzer.inlayHints.enable": true
 }
