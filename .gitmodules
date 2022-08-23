@@ -65,3 +65,6 @@
 [submodule "pack/plugins/start/auto-pairs"]
 	path = pack/plugins/start/auto-pairs
 	url = git@github.com:Eliot00/auto-pairs.git
+[submodule "pack/plugins/start/git-lens"]
+	path = pack/plugins/start/git-lens
+	url = git@github.com:Eliot00/git-lens.vim.git
