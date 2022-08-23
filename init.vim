@@ -1,6 +1,6 @@
 vim9script
 
-import autoload 'vsearch.vim' as vsearch
+import autoload 'elliot/utils.vim'
 
 # common config {{{
 set nocompatible
@@ -52,8 +52,8 @@ noremap <silent><f5> :AsyncTask run<cr>
 # }}}
 
 # visual search {{{
-xnoremap * :<C-u>call vsearch#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
-xnoremap # :<C-u>call vsearch#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
+xnoremap * :<C-u>call elliot#utils#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call elliot#utils#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 # }}}
 
 # vista {{{
