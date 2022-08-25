@@ -32,6 +32,7 @@
 [submodule "pack/plugins/opt/fern"]
 	path = pack/plugins/opt/fern
 	url = git@github.com:lambdalisue/fern.vim.git
+	branch = main
 [submodule "pack/plugins/opt/fern-renderer-nerdfont"]
 	path = pack/plugins/opt/fern-renderer-nerdfont
 	url = git@github.com:lambdalisue/fern-renderer-nerdfont.vim.git
