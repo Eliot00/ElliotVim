@@ -1,7 +1,9 @@
 {
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "coc.preferences.formatOnSaveFiletypes": ["rust"],
     "typescript.inlayHints.parameterNames.enabled": "all",
-    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.inlayHints.maxLength": 12,
+    "rust-analyzer.inlayHints.chainingHints.enable": true,
     "suggest.completionItemKindLabels": {
         "constructor": "\ufb25",
         "keyword": "\uf1de",
