@@ -1,7 +1,5 @@
 vim9script
 
-import autoload 'elliot/utils.vim'
-
 # common config {{{
 set nocompatible
 
@@ -59,6 +57,8 @@ xnoremap # :<C-u>call elliot#utils#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 # vista {{{
 const g:vista_default_executive = 'coc'
 # }}}
+
+noremap <silent><leader>i :<C-u>call elliot#utils#ToggleListCharsIndentGuides()<CR>
 
 packadd fern-hijack
 packadd fern
