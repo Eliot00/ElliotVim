@@ -41,6 +41,7 @@ set hidden
 set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vimswap//
+set list listchars=tab:»·,trail:·,extends:#,leadmultispace:⋮\ \ \ 
 # }}}
 
 # async task {{{
@@ -57,8 +58,6 @@ xnoremap # :<C-u>call elliot#utils#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 # vista {{{
 const g:vista_default_executive = 'coc'
 # }}}
-
-noremap <silent><leader>i :<C-u>call elliot#utils#ToggleListCharsIndentGuides()<CR>
 
 packadd fern-hijack
 packadd fern
