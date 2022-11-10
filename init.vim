@@ -41,7 +41,7 @@ set hidden
 set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vimswap//
-set list listchars=tab:»·,trail:·,extends:#,leadmultispace:⋮\ \ \ 
+set list listchars=tab:»·,trail:·,extends:#,leadmultispace:│\ \ \ 
 # }}}
 
 # async task {{{
