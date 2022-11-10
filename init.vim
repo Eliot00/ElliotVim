@@ -45,8 +45,8 @@ set list listchars=tab:»·,trail:·,extends:#,leadmultispace:│\ \ \
 # }}}
 
 # async task {{{
-const g:asyncrun_open = 6
-const g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
+g:asyncrun_open = 6
+g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
 noremap <silent><f5> :AsyncTask run<cr>
 # }}}
 
@@ -56,7 +56,7 @@ xnoremap # :<C-u>call elliot#utils#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 # }}}
 
 # vista {{{
-const g:vista_default_executive = 'coc'
+g:vista_default_executive = 'coc'
 # }}}
 
 packadd fern-hijack
