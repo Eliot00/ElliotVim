@@ -48,6 +48,9 @@ set list listchars=tab:»·,trail:·,extends:#,leadmultispace:│\ \ \
 g:asyncrun_open = 6
 g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
 noremap <silent><f5> :AsyncTask run<cr>
+noremap <silent><f6> :AsyncTask test<cr>
+noremap <silent><f7> :AsyncTask deploy<cr>
+noremap <silent><f8> :AsyncStop<cr>
 # }}}
 
 # visual search {{{
