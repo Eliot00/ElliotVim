@@ -5,5 +5,5 @@ if exists('+termguicolors')
 endif
 
 set background=light
-packadd nightfox
-colorscheme dawnfox
+packadd everforest
+colorscheme everforest
