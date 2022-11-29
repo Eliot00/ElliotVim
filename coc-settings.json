@@ -1,6 +1,5 @@
 {
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-    "coc.preferences.formatOnSaveFiletypes": ["rust"],
     "typescript.inlayHints.parameterNames.enabled": "all",
     "rust-analyzer.inlayHints.maxLength": 12,
     "rust-analyzer.inlayHints.chainingHints.enable": true,
@@ -31,5 +30,5 @@
         "snippet": "\ue60b",
         "typeParameter": "\uf728",
         "default": " "
-  }
+    }
 }
