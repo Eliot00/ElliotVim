@@ -1,6 +1,9 @@
 {
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-    "typescript.inlayHints.parameterNames.enabled": "all",
+    "coc.preferences.formatOnSave": true,
+    "typescript.inlayHints.parameterNames.enabled": "literals",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
     "rust-analyzer.inlayHints.maxLength": 12,
     "rust-analyzer.inlayHints.chainingHints.enable": true,
     "suggest.completionItemKindLabels": {
