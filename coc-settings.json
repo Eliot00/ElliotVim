@@ -1,6 +1,5 @@
 {
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-    "coc.preferences.formatOnSave": true,
     "typescript.inlayHints.parameterNames.enabled": "literals",
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
@@ -33,5 +32,8 @@
         "snippet": "\ue60b",
         "typeParameter": "\uf728",
         "default": " "
+    },
+    "[rust]": {
+        "coc.preferences.formatOnSave": true
     }
 }
