@@ -1,5 +1,6 @@
 {
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "semanticTokens.enable": true,
     "typescript.inlayHints.parameterNames.enabled": "literals",
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
