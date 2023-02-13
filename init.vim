@@ -7,7 +7,6 @@ set number
 set relativenumber
 set signcolumn=yes
 
-syntax on
 set showmode
 set showcmd
 set ttymouse=sgr
@@ -15,6 +14,7 @@ set mouse=a
 set encoding=utf-8
 set t_Co=256
 filetype plugin indent on
+syntax on
 
 set autoindent
 set smartindent
