@@ -60,12 +60,12 @@
 [submodule "pack/colors/opt/nightfox"]
 	path = pack/colors/opt/nightfox
 	url = git@github.com:EdenEast/nightfox.nvim.git
-[submodule "pack/plugins/start/statusnine"]
-	path = pack/plugins/start/statusnine
-	url = git@github.com:Eliot00/statusnine.git
 [submodule "pack/plugins/start/auto-pairs"]
 	path = pack/plugins/start/auto-pairs
 	url = git@github.com:Eliot00/auto-pairs.git
 [submodule "pack/plugins/start/git-lens"]
 	path = pack/plugins/start/git-lens
 	url = git@github.com:Eliot00/git-lens.vim.git
+[submodule "pack/plugins/start/qline"]
+	path = pack/plugins/start/qline
+	url = git@github.com:Bakudankun/qline.vim.git
