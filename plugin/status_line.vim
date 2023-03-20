@@ -6,7 +6,7 @@ g:qline_config = {
   active: {
     left: [
       ['mode', 'paste'],
-      ['filename', 'gitgutter'],
+      ['git_branch', 'filename', 'gitgutter'],
       ['bufstate']
     ],
     right: [
@@ -42,10 +42,9 @@ g:qline_config = {
     filetype: {
       content: () => nerdfont#find(),
     },
-    # gin_branch: {
-    #   content: () => substitute(gin#component#branch#ascii(), '^\(\S\+\).*', '\1', ''),
-    #   highlight: 'Git',
-    # },
+    git_branch: {
+      content: () => substitute(g:FugitiveHead(), '^\(\S\+\).*', '\1', ''),
+    },
     # gin_traffic: {
     #   content: () => gin#component#traffic#unicode(),
     #   highlight: 'Git',
