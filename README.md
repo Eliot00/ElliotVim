@@ -6,7 +6,6 @@ Elliot's personal vim config
 
 ```shell
 git clone --recursive https://github.com/Eliot00/ElliotVim ~/.vim
-ln -s ~/.vim/init.vim ~/.vimrc
 ```
 
 2. Create swap folder
