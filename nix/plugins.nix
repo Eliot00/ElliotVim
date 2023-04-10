@@ -37,7 +37,7 @@ let
       sha256 = "NYonYP54PVUwHbU+Q/D7MqhVh+IB0B17KaHtkg19PaI=";
     };
   };
-  auto-pairs = pkgs.vimUtils.buildVimPlugin {
+  elliot-auto-pairs = pkgs.vimUtils.buildVimPlugin {
     name = "auto-pairs";
     src = pkgs.fetchFromGitHub {
       owner = "Eliot00";
@@ -60,8 +60,8 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "Eliot00";
       repo = "git-lens.vim";
-      rev = "80f65d161587f052c7f5d4e8b97877d9c8379ca0";
-      sha256 = "jbzxhH8rzkiMxXBtddvwSG5lqdfmAlEJztg+8g8HHsI=";
+      rev = "80098429d0da55c812a9a82c7fe99ef9bf197043";
+      sha256 = "JyMohMiX/+ct9TG0JCUH5TCWpdqEFwgSItOrE83bKwU=";
     };
   };
 in
@@ -69,7 +69,6 @@ with pkgs.vimPlugins; [
   LeaderF
   asyncrun-vim
   asynctasks-vim
-  auto-pairs
   coc-css
   coc-html
   coc-json
@@ -78,6 +77,7 @@ with pkgs.vimPlugins; [
   coc-rust-analyzer
   coc-tabnine
   coc-tsserver
+  elliot-auto-pairs
   everforest
   fern-git-status
   fern-hijack
