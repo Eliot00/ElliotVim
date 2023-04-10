@@ -75,7 +75,6 @@ with pkgs.vimPlugins; [
   coc-nvim
   coc-pyright
   coc-rust-analyzer
-  coc-tabnine
   coc-tsserver
   elliot-auto-pairs
   everforest
