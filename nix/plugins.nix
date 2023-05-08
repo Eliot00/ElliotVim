@@ -24,8 +24,8 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "lambdalisue";
       repo = "fern-renderer-nerdfont.vim";
-      rev = "1a3719f226edc27e7241da7cda4bc4d4c7db889c";
-      sha256 = "rWsTB5GkCPqicP6zRoJWnwBUAPDklGny/vjeRu2e0YY=";
+      rev = "1e90a78ab5510fbcedc85abeb9a251d978726935";
+      sha256 = "foX/RguLMKVs0TvBcnfH9m3hkDQmfokzuESrb4iUmw8=";
     };
   };
   nerdfont = pkgs.vimUtils.buildVimPlugin {
