@@ -11,7 +11,6 @@ inputs: {
     (pkgs.vim_configurable.customize {
       name = "vim";
       vimrcConfig = {
-        customRC = (builtins.readFile ../legacy_init.vim);
         packages.myVimPackage = {
           start = import ./plugins.nix { inherit pkgs; };
         };
