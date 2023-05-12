@@ -69,3 +69,6 @@
 [submodule "pack/plugins/start/qline"]
 	path = pack/plugins/start/qline
 	url = git@github.com:Bakudankun/qline.vim.git
+[submodule "pack/plugins/start/stargate"]
+	path = pack/plugins/start/stargate
+	url = git@github.com:monkoose/vim9-stargate.git

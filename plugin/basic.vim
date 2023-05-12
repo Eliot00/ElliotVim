@@ -54,11 +54,6 @@ noremap <silent><f7> :AsyncTask deploy<cr>
 noremap <silent><f8> :AsyncStop<cr>
 # }}}
 
-# visual search {{{
-xnoremap * :<C-u>call elliot#utils#VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
-xnoremap # :<C-u>call elliot#utils#VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
-# }}}
-
 # vista {{{
 g:vista_default_executive = 'coc'
 # }}}
