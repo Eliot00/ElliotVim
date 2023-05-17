@@ -89,4 +89,5 @@ with pkgs.vimPlugins; [
   vim-gitgutter
   vim-polyglot
   vim-surround
+  vim9-stargate
 ]
