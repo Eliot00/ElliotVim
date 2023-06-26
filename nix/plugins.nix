@@ -60,8 +60,8 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "Eliot00";
       repo = "git-lens.vim";
-      rev = "80098429d0da55c812a9a82c7fe99ef9bf197043";
-      sha256 = "JyMohMiX/+ct9TG0JCUH5TCWpdqEFwgSItOrE83bKwU=";
+      rev = "c27b09f0f7c639a39c75c7ad978eefe9be93120d";
+      sha256 = "jSEXsocjXDyVq6s+RdnRnbjW0soG58vYJRgB9EhKHw8=";
     };
   };
 in
