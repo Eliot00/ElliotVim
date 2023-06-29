@@ -37,15 +37,6 @@ let
       sha256 = "NYonYP54PVUwHbU+Q/D7MqhVh+IB0B17KaHtkg19PaI=";
     };
   };
-  elliot-auto-pairs = pkgs.vimUtils.buildVimPlugin {
-    name = "auto-pairs";
-    src = pkgs.fetchFromGitHub {
-      owner = "Eliot00";
-      repo = "auto-pairs";
-      rev = "90b7d76c93dd9996bc6f677b11b6379340ba5dfb";
-      sha256 = "4wwYNLAOSsHavcXhKP7c766cakEiLGiThm450NjFCYI=";
-    };
-  };
   qline = pkgs.vimUtils.buildVimPlugin {
     name = "qline";
     src = pkgs.fetchFromGitHub {
@@ -53,15 +44,6 @@ let
       repo = "qline.vim";
       rev = "7845c8456bb35ee83a11089f03ce52a17ced3fca";
       sha256 = "1a/b7Ccovbb9YULO7foMFn0n9taiFlcvk7yT31XZrVw=";
-    };
-  };
-  git-lens = pkgs.vimUtils.buildVimPlugin {
-    name = "git-lens";
-    src = pkgs.fetchFromGitHub {
-      owner = "Eliot00";
-      repo = "git-lens.vim";
-      rev = "c27b09f0f7c639a39c75c7ad978eefe9be93120d";
-      sha256 = "jSEXsocjXDyVq6s+RdnRnbjW0soG58vYJRgB9EhKHw8=";
     };
   };
 in
@@ -76,13 +58,11 @@ with pkgs.vimPlugins; [
   coc-pyright
   coc-rust-analyzer
   coc-tsserver
-  elliot-auto-pairs
   everforest
   fern-git-status
   fern-hijack
   fern-renderer-nerdfont
   fern-vim
-  git-lens
   nerdfont
   qline
   vim-fugitive
