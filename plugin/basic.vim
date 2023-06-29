@@ -40,7 +40,7 @@ set history=800
 set hidden
 set updatetime=300
 set shortmess+=c
-set directory=$HOME/.vimswap//
+set directory=$HOME/.vim/swap/
 set list listchars=tab:»·,trail:·,extends:#,leadmultispace:│\ \ \ 
 set clipboard^=unnamed
 # }}}
