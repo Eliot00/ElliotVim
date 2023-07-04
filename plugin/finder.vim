@@ -4,7 +4,7 @@ vim9script
 g:Lf_WindowPosition = 'popup'
 g:Lf_PreviewInPopup = 1
 
-noremap <leader>rg :<C-U><C-R>=printf("Leaderf rg --auto-preview %s", "")<CR><CR>
+noremap <leader>rg :<C-U><C-R>=printf("Leaderf rg --max-columns 300 --auto-preview %s", "")<CR><CR>
 # }}}
 
 # easymotion {{{
