@@ -4,7 +4,21 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme dawnfox
+lua << trim EOF
+require('nightfox').setup({
+    options = {
+        dim_inactive = true,
+        styles = {
+          comments = "italic",
+          keywords = "bold",
+          functions = "italic,bold",
+        },
+    },
+})
+vim.command([[
+    colorscheme dawnfox
+]])
+EOF
 
 let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"
