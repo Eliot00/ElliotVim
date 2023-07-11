@@ -58,12 +58,12 @@ with pkgs.vimPlugins; [
   coc-pyright
   coc-rust-analyzer
   coc-tsserver
-  everforest
   fern-git-status
   fern-hijack
   fern-renderer-nerdfont
   fern-vim
   nerdfont
+  nightfox-nvim
   qline
   vim-fugitive
   vim-gitgutter
