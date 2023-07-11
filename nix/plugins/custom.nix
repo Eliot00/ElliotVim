@@ -46,4 +46,15 @@
       sha256 = "1a/b7Ccovbb9YULO7foMFn0n9taiFlcvk7yT31XZrVw=";
     };
   };
+  LeaderF = pkgs.vimUtils.buildVimPluginFrom2Nix {
+    pname = "LeaderF";
+    version = "2023-07-11";
+    src = pkgs.fetchFromGitHub {
+      owner = "Yggdroot";
+      repo = "LeaderF";
+      rev = "49af82180b22c3c2ff8d9d1e82a7ab1486cd052b";
+      sha256 = "zUWSwgbAvzlL/nGfEjLAQ9BtxWITBxtu17e2vqUfmJI=";
+    };
+    meta.homepage = "https://github.com/Yggdroot/LeaderF/";
+  };
 }
