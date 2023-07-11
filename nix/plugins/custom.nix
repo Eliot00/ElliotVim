@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-let
+{
   fern-git-status = pkgs.vimUtils.buildVimPlugin {
     name = "fern-git-status";
     src = pkgs.fetchFromGitHub {
@@ -46,28 +46,4 @@ let
       sha256 = "1a/b7Ccovbb9YULO7foMFn0n9taiFlcvk7yT31XZrVw=";
     };
   };
-in
-with pkgs.vimPlugins; [
-  LeaderF
-  asyncrun-vim
-  asynctasks-vim
-  coc-css
-  coc-html
-  coc-json
-  coc-nvim
-  coc-pyright
-  coc-rust-analyzer
-  coc-tsserver
-  fern-git-status
-  fern-hijack
-  fern-renderer-nerdfont
-  fern-vim
-  nerdfont
-  nightfox-nvim
-  qline
-  vim-fugitive
-  vim-gitgutter
-  vim-polyglot
-  vim-surround
-  vim9-stargate
-]
+}
