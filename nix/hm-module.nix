@@ -10,6 +10,6 @@ inputs: {
   programs.vim = {
     enable = true;
     packageConfigurable = pkgs.vim-darwin;
-    plugins = import ./plugins.nix { inherit pkgs; };
+    plugins = import ./plugins { inherit pkgs; };
   };
 }

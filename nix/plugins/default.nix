@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, ... }@inputs:
 
 let
-  custom = import ./custom.nix;
+  custom = import ./custom.nix inputs;
 in
 with pkgs.vimPlugins; [
   LeaderF
