@@ -33,8 +33,8 @@
     src = pkgs.fetchFromGitHub {
       owner = "lambdalisue";
       repo = "nerdfont.vim";
-      rev = "b7dec1f9798470abf9ef877d01e4415d72f792be";
-      sha256 = "NYonYP54PVUwHbU+Q/D7MqhVh+IB0B17KaHtkg19PaI=";
+      rev = "2cb5dcfc10bf40e04b5946561cad80bad0ebebed";
+      sha256 = "hvrvnCdpG6wI1yHHhQfXwEqwVbojZMqNPEM+qdPAI6I=";
     };
   };
   qline = pkgs.vimUtils.buildVimPlugin {
