@@ -57,9 +57,6 @@
 [submodule "pack/plugins/opt/LeaderF"]
 	path = pack/plugins/opt/LeaderF
 	url = git@github.com:Yggdroot/LeaderF.git
-[submodule "pack/colors/opt/nightfox"]
-	path = pack/colors/opt/nightfox
-	url = git@github.com:EdenEast/nightfox.nvim.git
 [submodule "pack/plugins/start/auto-pairs"]
 	path = pack/plugins/start/auto-pairs
 	url = git@github.com:Eliot00/auto-pairs.git
