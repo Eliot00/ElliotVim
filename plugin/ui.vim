@@ -22,7 +22,7 @@ vim9cmd g:qline_config = {
     ],
     right: [
       ['filetype'],
-      ['fileinfo'],
+      ['fileinfo', 'lsp'],
       ['%c%-1V', 'searchcount']
     ]
   },
@@ -57,10 +57,6 @@ vim9cmd g:qline_config = {
       content: () => substitute(g:FugitiveHead(), '^\(\S\+\).*', '\1', ''),
       highlight: 'MyGitInfo',
     },
-    # gin_traffic: {
-    #   content: () => gin#component#traffic#unicode(),
-    #   highlight: 'Git',
-    # },
     gitgutter: {
       content: () =>
         g:GitGutterGetHunkSummary()
@@ -68,6 +64,9 @@ vim9cmd g:qline_config = {
           ->filter((_, val) => !!val)
           ->join(),
       visible_condition: () => g:GitGutterGetHunks(),
+    },
+    lsp: {
+      content: () => $'{get(b:, "coc_current_function", '')}',
     },
   },
 }
