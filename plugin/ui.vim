@@ -4,7 +4,10 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme everforest
+set background=light
+let g:gruvbox_material_background = 'soft'
+let g:gruvbox_material_better_performance = 1
+colorscheme gruvbox-material
 
 let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"

@@ -1,4 +1,4 @@
-packadd everforest
+packadd gruvbox-material
 packadd fern-hijack
 packadd fern
 packadd nerdfont
