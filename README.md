@@ -16,7 +16,7 @@ Open vim and use `:CocInstall coc-pyright`, see detail in [coc.nvim](https://git
 
 ### Add plugins
 
-Use `git submodule`, like `git submodule add https://github.com/zivyangll/git-blame.vim packe/plugins/start/git-blame`
+Use `git submodule`, like `git submodule add https://github.com/zivyangll/git-blame.vim pack/plugins/start/git-blame`
 
 ### Update plugins
 
