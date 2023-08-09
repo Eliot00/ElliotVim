@@ -7,6 +7,7 @@ endif
 set background=light
 let g:gruvbox_material_background = 'soft'
 let g:gruvbox_material_better_performance = 1
+let g:gruvbox_material_enable_bold = 1
 colorscheme gruvbox-material
 
 let &t_Cs = "\e[4:3m"
