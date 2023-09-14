@@ -48,6 +48,7 @@ set clipboard^=unnamed
 # async task {{{
 g:asyncrun_open = 6
 g:asyncrun_rootmarks = ['.git', 'package.json', 'pyproject.toml', 'cargo.toml']
+g:asynctasks_term_pos = 'tab'
 noremap <silent><f5> :AsyncTask run<cr>
 noremap <silent><f6> :AsyncTask test<cr>
 noremap <silent><f7> :AsyncTask deploy<cr>
