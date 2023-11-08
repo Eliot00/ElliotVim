@@ -43,7 +43,6 @@ set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vim/swap/
 set list listchars=tab:»·,trail:·,extends:#,leadmultispace:│\ \ \ 
-set clipboard^=unnamed
 # }}}
 
 # async task {{{
