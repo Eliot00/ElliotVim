@@ -69,8 +69,8 @@ vim9cmd g:qline_config = {
           ->join(),
       visible_condition: () => g:GitGutterGetHunks(),
     },
-    lsp: {
-      content: () => $'{get(b:, "coc_current_function", '')}',
-    },
+    # lsp: {
+    #   content: () => $'{get(b:, "coc_current_function", '')}',
+    # },
   },
 }

@@ -4,10 +4,6 @@
 [submodule "pack/plugins/start/vim-surround"]
 	path = pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "pack/syntax/start/coc.nvim"]
-	path = pack/syntax/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
-	branch = release
 [submodule "pack/plugins/start/vim-fugitive"]
 	path = pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
@@ -72,3 +68,10 @@
 [submodule "pack/colors/opt/gruvbox-material"]
 	path = pack/colors/opt/gruvbox-material
 	url = git@github.com:sainnhe/gruvbox-material.git
+[submodule "pack/syntax/opt/lsp"]
+	path = pack/syntax/opt/lsp
+	url = git@github.com:yegappan/lsp.git
+[submodule "pack/syntax/opt/coc"]
+	path = pack/syntax/opt/coc
+	url = git@github.com:neoclide/coc.nvim.git
+	branch = release
