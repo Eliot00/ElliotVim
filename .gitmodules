@@ -68,9 +68,6 @@
 [submodule "pack/colors/opt/gruvbox-material"]
 	path = pack/colors/opt/gruvbox-material
 	url = git@github.com:sainnhe/gruvbox-material.git
-[submodule "pack/syntax/opt/lsp"]
-	path = pack/syntax/opt/lsp
-	url = git@github.com:yegappan/lsp.git
 [submodule "pack/syntax/opt/coc"]
 	path = pack/syntax/opt/coc
 	url = git@github.com:neoclide/coc.nvim.git
