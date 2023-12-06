@@ -4,7 +4,6 @@ vim9script
 set nocompatible
 
 set number
-set relativenumber
 set signcolumn=yes
 
 set showmode
