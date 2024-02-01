@@ -8,10 +8,7 @@ set signcolumn=yes
 
 set showmode
 set showcmd
-set ttymouse=sgr
-set mouse=a
 set encoding=utf-8
-set t_Co=256
 filetype plugin indent on
 syntax on
 
@@ -42,6 +39,8 @@ set updatetime=300
 set shortmess+=c
 set directory=$HOME/.vim/swap/
 set list listchars=tab:»·,trail:·,extends:#,leadmultispace:│\ \ \ 
+
+set shell=/run/current-system/sw/bin/fish
 # }}}
 
 # async task {{{
