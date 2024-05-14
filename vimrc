@@ -7,3 +7,4 @@ packadd fern-git-status
 packadd asyncrun
 packadd asynctasks
 packadd LeaderF
+packadd comment
