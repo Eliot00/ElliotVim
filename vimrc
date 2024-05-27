@@ -1,4 +1,4 @@
-packadd gruvbox-material
+packadd catppuccin
 packadd fern-hijack
 packadd fern
 packadd nerdfont

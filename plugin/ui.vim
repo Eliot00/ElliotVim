@@ -49,69 +49,33 @@ let &t_RT = "\e[23;2t"
 let &t_ut=''
 
 set background=light
-let g:gruvbox_material_background = 'soft'
-let g:gruvbox_material_better_performance = 1
-let g:gruvbox_material_enable_bold = 1
-colorscheme gruvbox-material
+colorscheme catppuccin
 
-vim9cmd hlset([{ name: 'MyGitInfo', guibg: '#F34F29', guifg: '#FFFFFF', ctermbg: '202', ctermfg: '231' }])
-
-vim9cmd g:qline_config = {
-  separator:    {left: "\ue0b0", right: "\ue0b2", margin: ' '},
-  subseparator: {left: "\ue0b1", right: "\ue0b3", margin: ' '},
-  active: {
-    left: [
-      ['mode', 'paste'],
-      ['git_branch', 'filename', 'gitgutter'],
-      ['bufstate']
-    ],
-    right: [
-      ['filetype'],
-      ['fileinfo', 'lsp'],
-      ['%c%-1V', 'searchcount']
-    ]
-  },
-  inactive: {
-    left: [['filename', 'gitgutter'], ['bufstate']],
-    right: [['filetype'], ['fileinfo']],
-    separator: {left: '', right: '', margin: ' '},
-    subseparator: {left: '|', right: '|', margin: ' '},
-  },
-  insert: {
-    separator:    {left: "\ue0c0", right: "\ue0c2", margin: ' '},
-    subseparator: {left: "\ue0c1", right: "\ue0c3", margin: ' '},
-  },
-  replace: {
-    separator:    {left: "\ue0c0", right: "\ue0c2", margin: ' '},
-    subseparator: {left: "\ue0c1", right: "\ue0c3", margin: ' '},
-  },
-  component: {
-    fileinfo: {
-      content: () =>
-        $'{&fenc ?? &enc} {nerdfont#fileformat#find()}{&bomb ? "\U1f4a3" : ''}',
-      visible_condition: () => !&buftype,
+vim9cmd g:lightline = {
+    'enable': {
+        'statusline': 1,
     },
-    bufstate: {
-      content: () =>
-        $'{&readonly ? "\uf023" : ''}{&modifiable ? '' : "\uf05e"}{&modified ? "\uf040" : ''}',
+    'colorscheme': 'catppuccin',
+    'active': {
+        'left': [
+            ['mode', 'paste'],
+            ['gitbranch', 'gitgutter', 'filename', 'modified']
+        ],
+        'right': [
+            ['fileformat'],
+            ['filetype', 'relativepath', 'readonly', 'lineinfo']
+        ]
     },
-    filetype: {
-      content: () => nerdfont#find(),
+    'component_function': {
+        'filetype': 'elliot#statusline#Filetype',
+        'fileformat': 'elliot#statusline#Fileformat',
+        'gitbranch': 'elliot#statusline#GitBranch',
+        'gitgutter': 'elliot#statusline#GitGutter',
+        'readonly': 'elliot#statusline#Readonly',
     },
-    git_branch: {
-      content: () => substitute(g:FugitiveHead(), '^\(\S\+\).*', '\1', ''),
-      highlight: 'MyGitInfo',
+    'component': {
+        'lineinfo': '%3l:%-2v%<',
     },
-    gitgutter: {
-      content: () =>
-        g:GitGutterGetHunkSummary()
-          ->mapnew((idx, val) => !val ? '' : ['+', '~', '-'][idx] .. val)
-          ->filter((_, val) => !!val)
-          ->join(),
-      visible_condition: () => g:GitGutterGetHunks(),
-    },
-    # lsp: {
-    #   content: () => $'{get(b:, "coc_current_function", '')}',
-    # },
-  },
+    'separator': { 'left': '', 'right': '' },
+    'subseparator': { 'left': '', 'right': '' }
 }

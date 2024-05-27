@@ -59,9 +59,6 @@
 [submodule "pack/plugins/start/git-lens"]
 	path = pack/plugins/start/git-lens
 	url = git@github.com:Eliot00/git-lens.vim.git
-[submodule "pack/plugins/start/qline"]
-	path = pack/plugins/start/qline
-	url = git@github.com:Bakudankun/qline.vim.git
 [submodule "pack/plugins/start/stargate"]
 	path = pack/plugins/start/stargate
 	url = git@github.com:monkoose/vim9-stargate.git
@@ -72,3 +69,9 @@
 	path = pack/syntax/opt/coc
 	url = git@github.com:neoclide/coc.nvim.git
 	branch = release
+[submodule "pack/plugins/start/lightline"]
+	path = pack/plugins/start/lightline
+	url = git@github.com:itchyny/lightline.vim.git
+[submodule "pack/colors/opt/catppuccin"]
+	path = pack/colors/opt/catppuccin
+	url = git@github.com:catppuccin/nvim.git
