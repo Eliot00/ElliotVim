@@ -51,7 +51,7 @@ let &t_ut=''
 set laststatus=2
 
 set background=light
-colorscheme catppuccin
+colorscheme catppuccin-latte
 
 vim9cmd g:lightline = {
     'enable': {
