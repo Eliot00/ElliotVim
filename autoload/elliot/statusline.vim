@@ -10,11 +10,18 @@ export def FileName(): string
         return '[No Name]'
     endif
 
-    return Readonly() .. fileName .. Modified()
+    return [
+        FileType(),
+        fileName,
+        Readonly(),
+        Modified(),
+    ]
+        ->filter((i, v) => !(v is null_string))
+        ->join(" ")
 enddef
 
-export def FileType(): string
-    return winwidth(0) > 70 ? nerdfont#find() : ''
+def FileType(): string
+    return winwidth(0) > 70 ? nerdfont#find() : null_string
 enddef
 
 export def FileFormat(): string
@@ -41,9 +48,9 @@ export def GitGutter(): string
 enddef
 
 def Modified(): string
-    return &modified ? '' : ''
+    return &modified ? '' : null_string
 enddef
 
 def Readonly(): string
-  return &readonly ? '' : ''
+  return &readonly ? '' : null_string
 enddef

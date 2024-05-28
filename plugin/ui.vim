@@ -61,22 +61,19 @@ vim9cmd g:lightline = {
     'active': {
         'left': [
             ['mode', 'paste'],
-            ['gitbranch', 'gitgutter', 'filename']
+            ['gitbranch', 'gitgutter'],
+            ['filename']
         ],
         'right': [
             ['fileformat'],
-            ['filetype', 'relativepath', 'lineinfo']
+            ['lineinfo', 'percent'],
         ]
     },
     'component_function': {
         'filename': 'elliot#statusline#FileName',
-        'filetype': 'elliot#statusline#FileType',
         'fileformat': 'elliot#statusline#FileFormat',
         'gitbranch': 'elliot#statusline#GitBranch',
         'gitgutter': 'elliot#statusline#GitGutter',
-    },
-    'component': {
-        'lineinfo': '%3l:%-2v%<',
     },
     'separator': { 'left': '', 'right': '' },
     'subseparator': { 'left': '', 'right': '' }
