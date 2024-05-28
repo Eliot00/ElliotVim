@@ -48,6 +48,8 @@ let &t_RT = "\e[23;2t"
 " kitty that do not support background color erase.
 let &t_ut=''
 
+set laststatus=2
+
 set background=light
 colorscheme catppuccin
 
