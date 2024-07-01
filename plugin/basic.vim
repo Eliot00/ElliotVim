@@ -52,8 +52,3 @@ noremap <silent><f6> :AsyncTask test<cr>
 noremap <silent><f7> :AsyncTask deploy<cr>
 noremap <silent><f8> :AsyncStop<cr>
 # }}}
-
-# auto-pairs {{{
-g:AutoPairsFlyMode = 1
-g:AutoPairsMapBS = 1
-# }}}

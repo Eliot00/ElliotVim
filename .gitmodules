@@ -71,4 +71,4 @@
 	url = git@github.com:catppuccin/nvim.git
 [submodule "pack/plugins/start/auto-pairs"]
 	path = pack/plugins/start/auto-pairs
-	url = git@github.com:LunarWatcher/auto-pairs.git
+	url = git@github.com:Eliot00/auto-pairs.git
