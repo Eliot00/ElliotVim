@@ -53,9 +53,6 @@
 [submodule "pack/plugins/opt/LeaderF"]
 	path = pack/plugins/opt/LeaderF
 	url = git@github.com:Yggdroot/LeaderF.git
-[submodule "pack/plugins/start/auto-pairs"]
-	path = pack/plugins/start/auto-pairs
-	url = git@github.com:Eliot00/auto-pairs.git
 [submodule "pack/plugins/start/git-lens"]
 	path = pack/plugins/start/git-lens
 	url = git@github.com:Eliot00/git-lens.vim.git
@@ -75,3 +72,6 @@
 [submodule "pack/colors/opt/catppuccin"]
 	path = pack/colors/opt/catppuccin
 	url = git@github.com:catppuccin/nvim.git
+[submodule "pack/plugins/start/auto-pairs"]
+	path = pack/plugins/start/auto-pairs
+	url = git@github.com:LunarWatcher/auto-pairs.git
