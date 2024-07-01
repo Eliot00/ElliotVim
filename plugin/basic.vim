@@ -57,3 +57,8 @@ noremap <silent><f8> :AsyncStop<cr>
 g:vista_default_executive = 'coc'
 # }}}
 
+
+# auto-pairs {{{
+g:AutoPairsFlyMode = 1
+g:AutoPairsMapBS = 1
+# }}}
