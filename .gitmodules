@@ -19,9 +19,6 @@
 [submodule "/Users/elliot/.vim/pack/syntax/start/vim-polyglot"]
 	path = /Users/elliot/.vim/pack/syntax/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "pack/plugins/opt/vista"]
-	path = pack/plugins/opt/vista
-	url = git@github.com:liuchengxu/vista.vim.git
 [submodule "pack/syntax/start/vim-polyglot"]
 	path = pack/syntax/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
