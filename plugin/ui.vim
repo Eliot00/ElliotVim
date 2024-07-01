@@ -51,13 +51,16 @@ let &t_ut=''
 set laststatus=2
 
 set background=light
-colorscheme catppuccin-latte
+let g:everforest_better_performance = 1
+let g:everforest_background = 'soft'
+let g:everforest_italic = 1
+colorscheme everforest
 
 vim9cmd g:lightline = {
     'enable': {
         'statusline': 1,
     },
-    'colorscheme': 'catppuccin',
+    'colorscheme': 'everforest',
     'active': {
         'left': [
             ['mode', 'paste'],

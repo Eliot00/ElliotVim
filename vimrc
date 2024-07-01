@@ -1,4 +1,4 @@
-packadd catppuccin
+packadd everforest
 packadd fern-hijack
 packadd fern
 packadd nerdfont
