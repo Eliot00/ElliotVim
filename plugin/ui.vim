@@ -50,17 +50,28 @@ let &t_ut=''
 
 set laststatus=2
 
-set background=light
-let g:everforest_better_performance = 1
-let g:everforest_background = 'soft'
-let g:everforest_italic = 1
-colorscheme everforest
+" comment
+
+lua << EOF
+require('nightfox').setup({
+    options = {
+        styles = {
+            comments = "italic",
+            keywords = "bold",
+            types = "italic,bold",
+        }
+    }
+})
+
+vim.command"colorscheme dawnfox"
+EOF
+
 
 vim9cmd g:lightline = {
     'enable': {
         'statusline': 1,
     },
-    'colorscheme': 'everforest',
+    'colorscheme': 'dawnfox',
     'active': {
         'left': [
             ['mode', 'paste'],

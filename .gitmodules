@@ -56,9 +56,6 @@
 [submodule "pack/plugins/start/stargate"]
 	path = pack/plugins/start/stargate
 	url = git@github.com:monkoose/vim9-stargate.git
-[submodule "pack/colors/opt/gruvbox-material"]
-	path = pack/colors/opt/gruvbox-material
-	url = git@github.com:sainnhe/gruvbox-material.git
 [submodule "pack/syntax/opt/coc"]
 	path = pack/syntax/opt/coc
 	url = git@github.com:neoclide/coc.nvim.git
@@ -66,9 +63,9 @@
 [submodule "pack/plugins/start/lightline"]
 	path = pack/plugins/start/lightline
 	url = git@github.com:itchyny/lightline.vim.git
-[submodule "pack/colors/opt/catppuccin"]
-	path = pack/colors/opt/catppuccin
-	url = git@github.com:catppuccin/nvim.git
 [submodule "pack/plugins/start/auto-pairs"]
 	path = pack/plugins/start/auto-pairs
 	url = git@github.com:Eliot00/auto-pairs.git
+[submodule "pack/colors/opt/nightfox"]
+	path = pack/colors/opt/nightfox
+	url = git@github.com:EdenEast/nightfox.nvim.git

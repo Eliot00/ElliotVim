@@ -1,4 +1,4 @@
-packadd everforest
+packadd nightfox
 packadd fern-hijack
 packadd fern
 packadd nerdfont
