@@ -69,3 +69,9 @@
 [submodule "pack/colors/opt/nightfox"]
 	path = pack/colors/opt/nightfox
 	url = git@github.com:EdenEast/nightfox.nvim.git
+[submodule "pack/plugins/opt/vimcomplete"]
+	path = pack/plugins/opt/vimcomplete
+	url = git@github.com:girishji/vimcomplete.git
+[submodule "pack/syntax/opt/lsp"]
+	path = pack/syntax/opt/lsp
+	url = git@github.com:yegappan/lsp.git
