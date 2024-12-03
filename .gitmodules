@@ -63,9 +63,6 @@
 [submodule "pack/plugins/start/lightline"]
 	path = pack/plugins/start/lightline
 	url = git@github.com:itchyny/lightline.vim.git
-[submodule "pack/plugins/start/auto-pairs"]
-	path = pack/plugins/start/auto-pairs
-	url = git@github.com:Eliot00/auto-pairs.git
 [submodule "pack/colors/opt/nightfox"]
 	path = pack/colors/opt/nightfox
 	url = git@github.com:EdenEast/nightfox.nvim.git
