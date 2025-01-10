@@ -3,11 +3,11 @@ vim9script
 import autoload "lsp/buffer.vim"
 
 g:vimcomplete_tab_enable = 1
+g:AutoPairsMapCR = 0
+g:vimcomplete_cr_enable = 0
 const completeOpts = {
     completor: {
         kindDisplayType: 'icon',
-        noNewlineInCompletion: true,
-        noNewlineInCompletionEver: true,
     },
     buffer: {
         enable: true,
@@ -19,6 +19,16 @@ const completeOpts = {
     },
 }
 g:VimCompleteOptionsSet(completeOpts)
+
+def SmartEnter(): string
+    if complete_info().selected > -1
+        return "\<C-Y>"
+    else
+        return "\<C-N>\<C-Y>"
+    endif
+enddef
+
+inoremap <silent><expr> <cr> pumvisible() ? SmartEnter() : "\<C-g>u\<CR>\<Plug>AutoPairsReturn"
 
 g:LspOptionsSet({
     completionMatcher: 'fuzzy',
