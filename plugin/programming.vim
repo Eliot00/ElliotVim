@@ -66,6 +66,8 @@ def OnLspAttachedBuffer()
     nnoremap <silent><buffer> gD :LspPeekDeclaration<CR>
   endif
 
+  nnoremap <silent><buffer> gr :LspPeekReferences<CR>
+
   nnoremap <silent><buffer> <leader>a :LspCodeAction<CR>
 
   nnoremap <silent><buffer> <leader>rn :LspRename<CR>
