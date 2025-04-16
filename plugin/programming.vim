@@ -72,8 +72,8 @@ def OnLspAttachedBuffer()
 
   nnoremap <silent><buffer> <leader>rn :LspRename<CR>
 
-  nnoremap <silent><buffer> [d        :LspDiag prev<CR>
-  nnoremap <silent><buffer> ]d        :LspDiag next<CR>
+  nnoremap <silent><buffer> [d        :LspDiagPrevWrap<CR>
+  nnoremap <silent><buffer> ]d        :LspDiagNextWrap<CR>
   nnoremap <silent><buffer> [D        :LspDiag first<CR>
   nnoremap <silent><buffer> ]D        :LspDiag last<CR>
   nnoremap <silent><buffer> <leader>d :LspDiag current<CR>
