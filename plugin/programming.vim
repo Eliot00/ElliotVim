@@ -1,82 +1,62 @@
 vim9script
 
-import autoload "lsp/buffer.vim"
+set cot=menuone,popup,noselect,nearest cpt=.^5,w^5,b^5,u^5
+autocmd TextChangedI * InsComplete()
 
-g:vimcomplete_tab_enable = 1
 g:AutoPairsMapCR = 0
-g:vimcomplete_cr_enable = 0
-const completeOpts = {
-    completor: {
-        kindDisplayType: 'icon',
-    },
-    buffer: {
-        enable: true,
-        priority: 9,
-    },
-    lsp: {
-        enable: true,
-        priority: 10,
-    },
-}
-g:VimCompleteOptionsSet(completeOpts)
+
+def InsComplete()
+  if getcharstr(1) == '' && getline('.')->strpart(0, col('.') - 1) =~ '\k$'
+    # Suppress event caused by <c-n> if completion candidates not found
+    SkipTextChangedI()
+    feedkeys("\<c-n>", "n")
+  endif
+enddef
+
+def SkipTextChangedI(): string
+  set eventignore+=TextChangedI  # Suppress next event caused by <c-e> (or <c-n> when no matches found)
+  timer_start(1, (_) => {
+    set eventignore-=TextChangedI
+  })
+  return ''
+enddef
+
+inoremap <silent><expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <silent><expr> <s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 def SmartEnter(): string
     if complete_info().selected > -1
-        return "\<C-Y>"
+        return "\<c-y>"
     else
-        return "\<C-N>\<C-Y>"
+        return "\<c-n>\<c-y>"
     endif
 enddef
 
-inoremap <silent><expr> <cr> pumvisible() ? SmartEnter() : "\<C-g>u\<CR>\<Plug>AutoPairsReturn"
+inoremap <silent><expr> <cr> pumvisible() ? "\<c-r>=<SID>SkipTextChangedI()\<cr>" .. SmartEnter() : "\<C-g>u\<CR>\<Plug>AutoPairsReturn"
 
-g:LspOptionsSet({
-    completionMatcher: 'fuzzy',
-})
-
-var ts_settings = {"args": ["--stdio"], "filetype": ["javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx"], "initializationOptions": {"hostInfo": "neovim"}, "name": "ts_ls", "path": "typescript-language-server", "rootSearch": ["tsconfig.json", "jsconfig.json", "package.json", ".git"]}
-
-var rust_settings = {"args": [], "filetype": ["rust"], "name": "rust_analyzer", "path": "rust-analyzer", "rootSearch": ["Cargo.toml", "rust-project.json", ".git"], "syncInit": true}
-
-g:LspAddServer([ts_settings, rust_settings])
-
-def LspHas(feature: string): bool
-  return !buffer.CurbufGetServer(feature)->empty()
+# --------------------------
+# Abbrev Completor
+# --------------------------
+set cpt+=fAbbrevCompletor
+def! g:AbbrevCompletor(findstart: number, base: string): any
+    if findstart > 0
+        var prefix = getline('.')->strpart(0, col('.') - 1)->matchstr('\S\+$')
+        if prefix->empty()
+            return -2
+        endif
+        return col('.') - prefix->len() - 1
+    endif
+    var lines = execute('ia', 'silent!')
+    if lines =~? gettext('No abbreviation found')
+        return v:none  # Suppresses warning message
+    endif
+    var items = []
+    for line in lines->split("\n")
+        var m = line->matchlist('\v^i\s+\zs(\S+)\s+(.*)$')
+        if m->len() > 2 && m[1]->stridx(base) == 0
+            items->add({ word: m[1], menu: 'abbr', info: m[2], dup: 1 })
+        endif
+    endfor
+    return items->empty() ? v:none : items
 enddef
 
-def OnLspAttachedBuffer()
-  # K mapping
-  if LspHas("hover")
-    setl keywordprg=:LspHover
-  endif
-
-  # gq mapping
-  if LspHas("documentFormatting")
-    setl formatexpr=lsp#lsp#FormatExpr()
-  endif
-
-  # CTRL-] mappings
-  if LspHas("definition")
-    setl tagfunc=lsp#lsp#TagFunc
-    nnoremap <silent><buffer> g] :LspPeekDefinition<CR>
-    nnoremap <silent><buffer> gd :LspGotoDefinition<CR>
-  endif
-
-  if LspHas("declaration")
-    nnoremap <silent><buffer> gD :LspPeekDeclaration<CR>
-  endif
-
-  nnoremap <silent><buffer> gr :LspPeekReferences<CR>
-
-  nnoremap <silent><buffer> <leader>a :LspCodeAction<CR>
-
-  nnoremap <silent><buffer> <leader>rn :LspRename<CR>
-
-  nnoremap <silent><buffer> [d        :LspDiagPrevWrap<CR>
-  nnoremap <silent><buffer> ]d        :LspDiagNextWrap<CR>
-  nnoremap <silent><buffer> [D        :LspDiag first<CR>
-  nnoremap <silent><buffer> ]D        :LspDiag last<CR>
-  nnoremap <silent><buffer> <leader>d :LspDiag current<CR>
-enddef
-
-autocmd User LspAttached OnLspAttachedBuffer()
