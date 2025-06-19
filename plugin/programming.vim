@@ -1,6 +1,6 @@
 vim9script
 
-set cot=menuone,popup,noselect,nearest cpt=.^5,o^10,w^5,b^5,u^5
+set cot=menuone,popup,noselect,nearest cpt=o^10,w^5,b^5,u^5
 autocmd TextChangedI * InsComplete()
 
 def InsComplete()
