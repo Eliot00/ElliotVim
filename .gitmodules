@@ -69,6 +69,3 @@
 [submodule "pack/syntax/opt/lsp"]
 	path = pack/syntax/opt/lsp
 	url = git@github.com:yegappan/lsp.git
-[submodule "pack/plugins/start/auto-pairs"]
-	path = pack/plugins/start/auto-pairs
-	url = git@github.com:LunarWatcher/auto-pairs.git

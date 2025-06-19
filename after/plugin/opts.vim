@@ -2,7 +2,14 @@ vim9script
 
 import autoload "lsp/buffer.vim"
 
-g:LspOptionsSet({ autoComplete: false, omniComplete: true })
+g:LspOptionsSet({
+    autoComplete: true,
+    diagSignErrorText: '',
+    diagSignHintText: '',
+    diagSignInfoText: '',
+    diagSignWarningText: '',
+    usePopupInCodeAction: true,
+})
 
 g:LspAddServer([{
     name: 'typescript-language-server',
