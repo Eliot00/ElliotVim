@@ -9,3 +9,5 @@ packadd asynctasks
 packadd LeaderF
 packadd comment
 packadd lsp
+packadd vsnip
+packadd vsnip-integ

@@ -9,6 +9,10 @@ g:LspOptionsSet({
     diagSignInfoText: '',
     diagSignWarningText: '',
     usePopupInCodeAction: true,
+    noNewlineInCompletion: true,
+    popupBorder: true,
+    snippetSupport: true,
+    vsnipSupport: true,
 })
 
 g:LspAddServer([{

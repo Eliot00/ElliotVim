@@ -69,3 +69,12 @@
 [submodule "pack/syntax/opt/lsp"]
 	path = pack/syntax/opt/lsp
 	url = git@github.com:yegappan/lsp.git
+[submodule "pack/plugins/opt/vsnip"]
+	path = pack/plugins/opt/vsnip
+	url = git@github.com:hrsh7th/vim-vsnip.git
+[submodule "pack/plugins/vsnip-integ"]
+	path = pack/plugins/vsnip-integ
+	url = git@github.com:hrsh7th/vim-vsnip-integ.git
+[submodule "pack/plugins/opt/vsnip-integ"]
+	path = pack/plugins/opt/vsnip-integ
+	url = git@github.com:hrsh7th/vim-vsnip-integ.git
