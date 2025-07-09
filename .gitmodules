@@ -19,9 +19,6 @@
 [submodule "/Users/elliot/.vim/pack/syntax/start/vim-polyglot"]
 	path = /Users/elliot/.vim/pack/syntax/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "pack/syntax/start/vim-polyglot"]
-	path = pack/syntax/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "pack/plugins/opt/fern"]
 	path = pack/plugins/opt/fern
 	url = git@github.com:lambdalisue/fern.vim.git
