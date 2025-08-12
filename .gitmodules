@@ -32,15 +32,9 @@
 [submodule "pack/plugins/opt/fern-git-status"]
 	path = pack/plugins/opt/fern-git-status
 	url = https://github.com/lambdalisue/vim-fern-git-status.git
-[submodule "pack/syntax/opt/vim-prisma"]
-	path = pack/syntax/opt/vim-prisma
-	url = https://github.com/prisma/vim-prisma.git
 [submodule "pack/colors/opt/everforest"]
 	path = pack/colors/opt/everforest
 	url = https://github.com/sainnhe/everforest.git
-[submodule "pack/colors/opt/sonokai"]
-	path = pack/colors/opt/sonokai
-	url = https://github.com/sainnhe/sonokai.git
 [submodule "pack/plugins/opt/LeaderF"]
 	path = pack/plugins/opt/LeaderF
 	url = https://github.com/Yggdroot/LeaderF.git
@@ -50,16 +44,9 @@
 [submodule "pack/plugins/start/stargate"]
 	path = pack/plugins/start/stargate
 	url = https://github.com/monkoose/vim9-stargate.git
-[submodule "pack/syntax/opt/coc"]
-	path = pack/syntax/opt/coc
-	url = https://github.com/neoclide/coc.nvim.git
-	branch = release
 [submodule "pack/plugins/start/lightline"]
 	path = pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule "pack/colors/opt/nightfox"]
-	path = pack/colors/opt/nightfox
-	url = https://github.com/EdenEast/nightfox.nvim.git
 [submodule "pack/syntax/opt/lsp"]
 	path = pack/syntax/opt/lsp
 	url = https://github.com/yegappan/lsp.git
