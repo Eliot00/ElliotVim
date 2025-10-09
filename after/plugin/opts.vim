@@ -3,33 +3,39 @@ vim9script
 import autoload "lsp/buffer.vim"
 
 g:LspOptionsSet({
-    autoComplete: true,
+    autoComplete: false,
+    omniComplete: true,
     diagSignErrorText: '',
     diagSignHintText: '',
     diagSignInfoText: '',
     diagSignWarningText: '',
     usePopupInCodeAction: true,
-    noNewlineInCompletion: true,
     popupBorder: true,
     snippetSupport: true,
     vsnipSupport: true,
 })
+set cpt+=o
 
-g:LspAddServer([{
-    name: 'typescript-language-server',
-    filetype: ["javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx"],
-    path: 'typescript-language-server',
-    args: ['--stdio'],
-    rootSearch: ['tsconfig.json', 'package.json', 'jsconfig.json', '.git'],
-}])
-g:LspAddServer([{
-    name: 'rust-analyzer',
-    filetype: ['rust'],
-    args: [],
-    syncInit: true,
-    path: 'rust-analyzer',
-    rootSearch: ['Cargo.toml', 'rust-project.json', '.git'],
-}])
+if executable('typescript-language-server')
+    g:LspAddServer([{
+        name: 'typescript-language-server',
+        filetype: ["javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx"],
+        path: 'typescript-language-server',
+        args: ['--stdio'],
+        rootSearch: ['tsconfig.json', 'package.json', 'jsconfig.json', '.git'],
+    }])
+endif
+
+if executable('rust-analyzer')
+    g:LspAddServer([{
+        name: 'rust-analyzer',
+        filetype: ['rust'],
+        args: [],
+        syncInit: true,
+        path: 'rust-analyzer',
+        rootSearch: ['Cargo.toml', 'rust-project.json', '.git'],
+    }])
+endif
 
 def LspHas(feature: string): bool
     return !buffer.CurbufGetServer(feature)->empty()
