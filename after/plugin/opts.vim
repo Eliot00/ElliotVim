@@ -11,8 +11,6 @@ g:LspOptionsSet({
     diagSignWarningText: '',
     usePopupInCodeAction: true,
     popupBorder: true,
-    snippetSupport: true,
-    vsnipSupport: true,
 })
 set cpt+=o
 
@@ -73,7 +71,6 @@ def OnLspAttachedBuffer()
     nnoremap <silent><buffer> ]d        :LspDiagNextWrap<CR>
     nnoremap <silent><buffer> [D        :LspDiag first<CR>
     nnoremap <silent><buffer> ]D        :LspDiag last<CR>
-    nnoremap <silent><buffer> <leader>d :LspDiag current<CR>
 enddef
 
 autocmd User LspAttached OnLspAttachedBuffer()
