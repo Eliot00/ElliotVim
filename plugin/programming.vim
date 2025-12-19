@@ -2,7 +2,8 @@ vim9script
 
 set autocomplete
 set cpt=.^5,w^5,b^5,u^5
-set cot=popup,longest
+set cot=popup
+set pumborder=round
 
 inoremap <silent><expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <silent><expr> <s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
@@ -36,6 +37,7 @@ def! g:AbbrevCompletor(findstart: number, base: string): any
     if m->len() > 2 && m[1]->stridx(base) == 0
       items->add({ word: m[1], menu: 'abbr', info: m[2], dup: 1 })
     endif
+    items->sort()
   endfor
   return items->empty() ? v:none : items
 enddef
